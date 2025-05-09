@@ -1,4 +1,4 @@
-on: [push, pull_request]
+on: [workflow_dispatch ]
 
 permissions:
   contents: read
@@ -12,7 +12,7 @@ jobs:
         submodules: true
 
     - name: Install dependencies
-      run: sudo apt update && sudo apt-get -y install cmake gcc g++ ninja-build libncurses5-dev libreadline-dev libsodium-dev libssl-dev make zlib1g-dev liblz4-dev libnl-genl-3-dev 
+      run: sudo apt update && sudo apt-get -y install cmake gcc g++ ninja-build libncurses5-dev libreadline-dev libsodium-dev libssl-dev make zlib1g-dev liblz4-dev libnl-genl-3-dev
 
     - name: Build
       run: |
@@ -24,7 +24,7 @@ jobs:
     - name: Build deb packages
       run: |
         cd build
-        cpack -C Release -G DEB 
+        cpack -C Release -G DEB
 
     - name: Upload DEB packages as artifacts
       if: github.ref == 'refs/heads/master'
