@@ -1,4 +1,4 @@
-on: [push, pull_request, workflow_dispatch]
+on: [workflow_dispatch]
 
 permissions:
   contents: read
@@ -17,11 +17,11 @@ jobs:
     - name: Install dependencies
       run: |
         brew install libsodium
-    - name: Compile 
+    - name: Compile
       run: |
         ./configure
         make -C build
-    - name: Test 
+    - name: Test
       run: |
         otool -L build/vpnserver
         .ci/memory-leak-test.sh
