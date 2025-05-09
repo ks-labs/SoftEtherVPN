@@ -12,7 +12,7 @@ jobs:
           { ARCHITECTURE: x86, COMPILER_PATH: "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/VC/Tools/Llvm/bin/clang-cl.exe",     VCPKG_TRIPLET: "x86-windows-static", VCVARS_PATH: "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/VC/Auxiliary/Build/vcvars32.bat"},
           { ARCHITECTURE: x64, COMPILER_PATH: "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/VC/Tools/Llvm/x64/bin/clang-cl.exe", VCPKG_TRIPLET: "x64-windows-static", VCVARS_PATH: "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/VC/Auxiliary/Build/vcvars64.bat"}
         ]
-    runs-on: self-hosted
+    runs-on: windows-latest
     name: ${{ matrix.platform.ARCHITECTURE }}
     steps:
     - uses: actions/checkout@v4
