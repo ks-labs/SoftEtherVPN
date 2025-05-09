@@ -15,7 +15,7 @@ permissions:
 
 jobs:
   release:
-    runs-on: windows-latest
+    runs-on: self-hosted
     outputs:
       upload_url: "${{ steps.create_release.outputs.upload_url }}"
     steps:
@@ -27,7 +27,7 @@ jobs:
         uses: softprops/action-gh-release@v1
   build-windows:
     name: ${{ matrix.platform.ARCHITECTURE }}
-    runs-on: windows-latest
+    runs-on: self-hosted
     needs: ["release"]
     strategy:
       matrix:
