@@ -1,4 +1,4 @@
-// SoftEther VPN Source Code - Developer Edition Master Branch
+// SoftEther VPN Source Code - TS Security Master Branch
 // Global Constants Header
 
 #pragma warning(disable : 4819)
@@ -15,18 +15,18 @@
 
 #define	CEDAR_PRODUCT_STR			"SoftEther"
 #define	CEDAR_PRODUCT_STR_W			L"SoftEther"
-#define	CEDAR_SERVER_STR			"SoftEther VPN Server Developer Edition"
-#define	CEDAR_BRIDGE_STR			"SoftEther VPN Bridge Developer Edition"
-#define	CEDAR_BETA_SERVER			"SoftEther VPN Server Pre Release Developer Edition"
-#define	CEDAR_MANAGER_STR			"SoftEther VPN Server Manager Developer Edition"
+#define	CEDAR_SERVER_STR			"SoftEther VPN Server TS Security"
+#define	CEDAR_BRIDGE_STR			"SoftEther VPN Bridge TS Security"
+#define	CEDAR_BETA_SERVER			"SoftEther VPN Server Pre Release TS Security"
+#define	CEDAR_MANAGER_STR			"SoftEther VPN Server Manager TS Security"
 #define	CEDAR_CUI_STR				"SoftEther VPN Command-Line Admin Tool"
-#define CEDAR_ELOG					"SoftEther EtherLogger Developer Edition"
-#define	CEDAR_CLIENT_STR			"SoftEther VPN Client Developer Edition"
-#define CEDAR_CLIENT_MANAGER_STR	"SoftEther VPN Client Connection Manager Developer Edition"
-#define	CEDAR_ROUTER_STR			"SoftEther VPN User-mode Router Developer Edition"
-#define	CEDAR_SERVER_LINK_STR		"SoftEther VPN Server Developer Edition (Cascade Mode)"
-#define	CEDAR_BRIDGE_LINK_STR		"SoftEther VPN Bridge Developer Edition (Cascade Mode)"
-#define	CEDAR_SERVER_FARM_STR		"SoftEther VPN Server Developer Edition (Cluster RPC Mode)"
+#define CEDAR_ELOG					"SoftEther EtherLogger TS Security"
+#define	CEDAR_CLIENT_STR			"SoftEther VPN Client TS Security"
+#define CEDAR_CLIENT_MANAGER_STR	"SoftEther VPN Client Connection Manager TS Security"
+#define	CEDAR_ROUTER_STR			"SoftEther VPN User-mode Router TS Security"
+#define	CEDAR_SERVER_LINK_STR		"SoftEther VPN Server TS Security (Cascade Mode)"
+#define	CEDAR_BRIDGE_LINK_STR		"SoftEther VPN Bridge TS Security (Cascade Mode)"
+#define	CEDAR_SERVER_FARM_STR		"SoftEther VPN Server TS Security (Cluster RPC Mode)"
 
 
 
@@ -47,14 +47,14 @@
 
 //// Registry
 
-#define	GC_REG_COMPANY_NAME			"SoftEther VPN Developer Edition"
+#define	GC_REG_COMPANY_NAME			"SoftEther VPN TS Security"
 
 
 
 
 //// Setup Wizard
 
-#define	GC_SW_UIHELPER_REGVALUE		"SoftEther VPN Client UI Helper Developer Edition"
+#define	GC_SW_UIHELPER_REGVALUE		"SoftEther VPN Client UI Helper TS Security"
 #define	GC_SW_SOFTETHER_PREFIX		"sedev"
 #define	GC_SW_SOFTETHER_PREFIX_W	L"sedev"
 
@@ -62,6 +62,6 @@
 
 //// VPN UI Components
 
-#define	GC_UI_APPID_CM				L"SoftEther.SoftEther VPN Client Developer Edition"
+#define	GC_UI_APPID_CM				L"SoftEther.SoftEther VPN Client TS Security"
 
 #endif	// GLOBAL_CONST_H
